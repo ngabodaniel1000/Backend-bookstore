@@ -14,7 +14,7 @@ connectDb();
 const port = process.env.PORT || 2003
 
 app.use(cors({
-    origin:"http://localhost:2000",
+    origin:["http://localhost:2000","https://mernbookstore-w5oq.onrender.com"],
     credentials:true
 }))
 // Session Middleware
